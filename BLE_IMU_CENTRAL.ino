@@ -1,11 +1,11 @@
 /*
   -----------------------------------------------------------------------------------------------
- | BLE_IMU_PERIPHERAL - Wireless IMU Communication with central device
+ | BLE_IMU_CENTRAL - Wireless IMU Communication with peripheral device
  |
  | Arduino Boards Tested: Nano 33 BLE Sense as a peripheral & Nano 33 BLE as central.
  | Code not tested for multiple peripherals
  |
- | This sketch works alongside the BLE_IMU_CENTRAL sketch to communicate with another Arduino BLE. 
+ | This sketch works alongside the BLE_IMU_PERIPHERAL sketch to communicate with another Arduino BLE. 
  | This sketch can also be used with a generic BLE central app, like LightBlue (iOS and Android) or
  | nRF Connect (Android), to interact with the services and characteristics created in this sketch.
  |
