@@ -39,8 +39,8 @@ float x, y, z;
 
 // ------------------------------------------ VOID SETUP ------------------------------------------
 void setup() {
-  Serial.begin(9600); //remove 'Serial' lines of code if you do not want to have to run the serial monitor
-  while (!Serial); 
+  Serial.begin(9600); 
+  //while (!Serial); //uncomment to view the IMU data in the peripheral serial monitor
 
   // begin IMU initialization
   if (!IMU.begin()) {
