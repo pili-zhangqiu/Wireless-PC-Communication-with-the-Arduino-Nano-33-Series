@@ -28,10 +28,13 @@ While the original boards only feature BLE, there is one way to use Bluetooth Cl
 The Arduino NANO 33 IoT's PCB integrates 2 modules: Cortex M0 SAMD21 microcontroller and the NINA W102 communication module. In the original version of the NANO 33 IoT Bluetooth Classic is not supported but only BLE. However, this is not limited by hardware but only by the software implemented in NINA module. 
 
 There is a way to hack into the NINA module by connecting to the PCB back pins with a UART to USB converter (e.g. CH340 board)
-![octocat](https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/Iot33_Pins.jpg)
+![octocat](https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/IoT33_NINAProgram.jpg)
 
-https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/FlexSleeve_BTDataFlow.jpg
-Unfortunately, it is not possible to unlock the Bluetooth Classic functionality in the Nano BLE Sense.
+Then, follow the steps indicated in the post linked above. This will include uploading a script to the NINA (through the CH340 board) and to the Cortex (through the normal Arduino USB port). After this is done, your Nano IoT will be ready to use Bluetooth Classic. The Cortex board will send data through Serial to the NINA board and the NINA board will be able to send data wirelessly using Bluetooth Classic.
+
+![octocat](https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/FlexSleeve_BTDataFlow.jpg)
+
+Unfortunately, it is not possible to unlock the Bluetooth Classic functionality in the Nano BLE Sense. For this, you can always implement the BLE 'dongle' approach described above.
 
 [1]: https://www.youtube.com/watch?v=4OFo_bktEWM
 
