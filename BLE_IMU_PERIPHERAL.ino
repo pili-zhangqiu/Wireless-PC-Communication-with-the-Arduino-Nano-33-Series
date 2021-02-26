@@ -17,6 +17,7 @@
 
 #include <ArduinoBLE.h>
 #include <Arduino_LSM9DS1.h>
+//#include <Arduino_LSM6DS3.h> // Uncomment this if your peripheral is the Nano 33 IoT
 
 // ------------------------------------------ BLE UUIDs ------------------------------------------
 #define BLE_UUID_PERIPHERAL               "19B10000-E8F2-537E-4F6C-D104768A1214" //please chnage to a unique value that matches BLE_IMU_CENTRAL
