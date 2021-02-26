@@ -19,6 +19,8 @@ To do this, upload the following files to your devices:
 
 These scripts will allow the central device to read the gyroscope data from the peripheral, as well as sending commands to the integrated LED in the peripheral to blink.
 
+[![Watch the video](https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/Thumbnail_Video.PNG)](https://vimeo.com/517351289)
+
 ## Unlocking the Bluetooth Classic Feature in the Nano 33 Iot
 **You will need:** 1x Arduino Nano 33 IoT
 
