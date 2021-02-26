@@ -7,15 +7,15 @@ This repository showcases different methods to create a wireless communication b
 While these boards are very convenient for rapid prototyping, wireless connections between these Arduinos and a PC can be frustrating, especially for Windows users. Here is a guide to 2 quick solutions to get your Arduino 33 board connected to your PC.
 
 ## BLE Communication through a 'Dongle'
-**You will need:** 2x Arduino Nano 33 BLE/BLE Sense
+**You will need:** 2x Arduino Nano 33 BLE/BLE Sense/IoT (the central and peripheral can be any of these 3 boards)
 
-A way to get these Arduinos connected to your PC is by having one of your (A) Nano 33 BLE/Sense communicate via BLE to another (B) Nano 33 BLE/Sense, which will be connected to a PC by USB. The latter (B) will act as a Bluetooth 'dongle' and will transmit data received from the other Arduino (A) to the PC through serial communication. In short, the wireless Arduino will act as a peripheral device, and the Arduino connected to the PC will act as a central device listening to data from the peripheral and redirecting it to the PC.
+A way to get these Arduinos connected to your PC is by having one of your (A) Nano 33 BLE/Sense/IoT communicate via BLE to another (B) Nano 33 BLE/Sense/IoT, which will be connected to a PC by USB. The latter (B) will act as a Bluetooth 'dongle' and will transmit data received from the other Arduino (A) to the PC through serial communication. In short, the wireless Arduino will act as a peripheral device, and the Arduino connected to the PC will act as a central device listening to data from the peripheral and redirecting it to the PC.
 
 ![octocat](https://github.com/pili-zhangqiu/Wireless-PC-Communication-with-the-Arduino-Nano-33-Series/blob/main/img/Arduino_BLE-IMU.jpg)
 
 To do this, upload the following files to your devices:
-- **BLE_IMU_CENTRAL.ino**: upload to the Arduino BLE/Sense connected to the PC (aka. dongle or A)
-- **BLE_IMU_PERIPHERAL.ino**: upload to the other Arduino BLE/Sense (B)
+- **BLE_IMU_CENTRAL.ino**: upload to the Arduino BLE/Sense/IoT connected to the PC (aka. dongle or A)
+- **BLE_IMU_PERIPHERAL.ino**: upload to the other Arduino BLE/Sense/IoT (B)
 
 These scripts will allow the central device to read the gyroscope data from the peripheral, as well as sending commands to the integrated LED in the peripheral to blink.
 
